@@ -1,17 +1,10 @@
 //  & EVENTS ________________________________________________________________________
-
 let a = document.getElementById(`head`)
-
 function hello() { console.log(`hello world !`); }
-
-// & EVENT HANDLERS  ________________________________________________________________
-
+// ^ EVENT HANDLERS  ________________________________________________________________
 let clock = document.getElementById(`clock`)
 let text = document.getElementById(`text`)
-
-function showTime() {
-  document.getElementById(`text`).textContent = Date();
-}
+function showTime() { document.getElementById(`text`).textContent = Date(); }
 
 // & EVENT LISTENERS ________________________________________________________________
 
