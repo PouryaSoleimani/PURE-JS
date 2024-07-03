@@ -1,9 +1,9 @@
 class Car {
-    constructor(make, model, color) {
-        this.make = make
-        this.model = model
-        this.color = color
-    }
+  constructor(make, model, color) {
+    this.make = make
+    this.model = model
+    this.color = color
+  }
 }
 
 // ^ USING REFLECT.CONSTRUCT -------------------------------------
@@ -14,26 +14,26 @@ console.log(carObj);
 
 // ^ REFLECT.DEFINEPROPERTY -------------------------------------
 let obj = {
-    name: "Pourya"
+  name: "Pourya"
 }
 Reflect.defineProperty(obj, `family`, { value: 'SOLEIMANI', })
 console.log(obj);
 
 // ^ REFLECT.DELETEPROPERTY ------------------------------------
-Reflect.deleteProperty(obj,`name`)
+Reflect.deleteProperty(obj, `name`)
 console.log(obj);
 
 // ^ REFLECT.GET -----------------------------------------------
-console.log(Reflect.get(obj,`family`));
+console.log(Reflect.get(obj, `family`));
 
-let arr = [10,20,30,40,50,60]
-console.log(Reflect.get(arr,1));
+let arr = [10, 20, 30, 40, 50, 60]
+console.log(Reflect.get(arr, 1));
 
 // ^ REFLECT.HAS -----------------------------------------------
-console.log(Reflect.has(obj,`name`));
+console.log(Reflect.has(obj, `name`));
 
 // ^ REFLECT.SET -----------------------------------------------
-Reflect.set(obj,"age","26")
+Reflect.set(obj, "age", "26")
 console.log(obj);
 
 // ^ REFLECT.OWNKEYS -------------------------------------------
