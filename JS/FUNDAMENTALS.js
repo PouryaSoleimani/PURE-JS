@@ -70,23 +70,23 @@ function test(a, b) {
   console.log(a, b);
 }
 test();
-function sum(a ,b){
- return a + b;
+function sum(a, b) {
+  return a + b;
 }
-var c  = sum( 4 , 5);
+var c = sum(4, 5);
 console.log(c);
 // ********
-function sayHello(){
+function sayHello() {
   return 'HELLO ROOCKET'
 }
 
 console.log(sayHello());
 
-var hl  = sayHello()
+var hl = sayHello()
 console.log(hl);
 
 // GOOD BYE
-function sayGoodbye(){
+function sayGoodbye() {
   return "GOOD BYE"
 }
 console.log(sayGoodbye());

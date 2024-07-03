@@ -56,14 +56,14 @@ console.log(myNewText);
 // console.log(carsList);
 
 // ** WITH DELETE --------------------------------------------
-var carsList = ["benz" , "bmw" , "posrche" , "audi" , "ford" , "chevrolet" , "volkswagen"]
+var carsList = ["benz", "bmw", "posrche", "audi", "ford", "chevrolet", "volkswagen"]
 console.log(carsList);
 delete carsList[3]
 console.log(carsList);
 
 // && #6 IP ADDRESS REPLACE -------------------------------------------------------------------------------------
 let ipText = "This is my Ip-Address `12.52.12.12` , How can i change it???"
-let ipText2 = ipText.match(/[0-9.0-9.0-9.0-9]/g )
-let ipText3 = ipText.replaceAll(/[`0-9.0-9.0-9.0-9`]/g , "pourya")
+let ipText2 = ipText.match(/[0-9.0-9.0-9.0-9]/g)
+let ipText3 = ipText.replaceAll(/[`0-9.0-9.0-9.0-9`]/g, "pourya")
 console.log(ipText);
 console.log(ipText3);

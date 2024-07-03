@@ -1,4 +1,4 @@
-// ** LOOPS 
+// ** LOOPS
 // && FOR
 // for( i = 0 ; i <=100 ; i++){
 //     console.log(  i + "%" + " " + "loading");
@@ -33,12 +33,12 @@
 // var i = 0;
 // while (i<100) {
 //     i++
-//     console.log(i + ' '+ "% Loading - Please Wait...");    
+//     console.log(i + ' '+ "% Loading - Please Wait...");
 // }
 // console.log("Loading Completed");
 //  var i = 100;
 //  while (i>0) {
-//     i--    
+//     i--
 //     console.log(i + ' ' + "Seconds Remaining");
 //  };
 // console.log("data transfer completed");
