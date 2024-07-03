@@ -1,12 +1,12 @@
-//  & EVENTS ________________________________________________________________________
+//  **** EVENTS =============================================================================================================================================
 let a = document.getElementById(`head`)
 function hello() { console.log(`hello world !`); }
-// ^ EVENT HANDLERS  ________________________________________________________________
+// ^ EVENT HANDLERS  =============================================================================================================================================
 let clock = document.getElementById(`clock`)
 let text = document.getElementById(`text`)
 function showTime() { document.getElementById(`text`).textContent = Date(); }
 
-// & EVENT LISTENERS ________________________________________________________________
+// & EVENT LISTENERS =============================================================================================================================================
 
 let el1 = document.getElementById(`el1`)
 
@@ -15,6 +15,7 @@ function hover() {
   el1.classList.remove(`bg-slate-900`)
   el1.classList.add(`bg-yellow-500`)
 }
+
 function hoverout() {
   let el1 = document.getElementById(`el1`)
   el1.classList.remove(`bg-yellow-500`)
