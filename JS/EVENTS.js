@@ -6,7 +6,7 @@ let clock = document.getElementById(`clock`)
 let text = document.getElementById(`text`)
 function showTime() { document.getElementById(`text`).textContent = Date(); }
 
-// & EVENT LISTENERS =============================================================================================================================================
+// EVENT LISTENERS =============================================================================================================================================
 
 let el1 = document.getElementById(`el1`)
 
@@ -46,7 +46,7 @@ function el2hoverout() {
 
 function log() {
   console.log(`test button activated !`);
-  document.getElementById(`test`).classList.add(`text-emerald-800`, `transition-all`, `duration-300`)
+  document.getElementById(`test`).classList.add(`text-red-800`, `transition-all`, `duration-300`)
 }
 
 
@@ -59,4 +59,5 @@ function changeColor() {
 
 
 // & STOP PROPAGATION & PREVENTDEFAULT _____________________________________________
+
 
