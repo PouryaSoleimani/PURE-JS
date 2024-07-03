@@ -290,30 +290,30 @@ import axios from "axios";
 const myList = document.querySelector(`#usersList`)
 
 async function getData() {
-    try {
-        const response = await axios.get("https://reqres.in/api/users?page=1")
-        // console.log(response);
-        // console.log(response.data.data);
-        for (const i in response.data.data) {
-            if (Object.hasOwnProperty.call(response.data.data, i)) {
-                // ! USER NAMES
-                const el = response.data.data[i];
-                let content = `${el.first_name} ${el.last_name}`
-                let userItem = document.createElement(`li`)
-                myList.appendChild(userItem)
-                userItem.textContent = content
-                userItem.classList.add(`flex`, `flex-row-reverse`,`items-center`,`justify-end`,`gap-4`,`my-auto`,`hover:bg-slate-600`
-                ,`w-full`,`rounded-xl`,`duration-150`)
-                // ! USER IMAGES __________
-                let imageSrc = `${el.avatar}`
-                let userImage = document.createElement(`img`)
-                userItem.appendChild(userImage)
-                userImage.setAttribute(`src`, imageSrc)
-                userImage.classList.add(`w-12`, `h-12`, `rounded-full`)
-            }
-        }
+  try {
+    const response = await axios.get("https://reqres.in/api/users?page=1")
+    // console.log(response);
+    // console.log(response.data.data);
+    for (const i in response.data.data) {
+      if (Object.hasOwnProperty.call(response.data.data, i)) {
+        // ! USER NAMES
+        const el = response.data.data[i];
+        let content = `${el.first_name} ${el.last_name}`
+        let userItem = document.createElement(`li`)
+        myList.appendChild(userItem)
+        userItem.textContent = content
+        userItem.classList.add(`flex`, `flex-row-reverse`, `items-center`, `justify-end`, `gap-4`, `my-auto`, `hover:bg-slate-600`
+          , `w-full`, `rounded-xl`, `duration-150`)
+        // ! USER IMAGES __________
+        let imageSrc = `${el.avatar}`
+        let userImage = document.createElement(`img`)
+        userItem.appendChild(userImage)
+        userImage.setAttribute(`src`, imageSrc)
+        userImage.classList.add(`w-12`, `h-12`, `rounded-full`)
+      }
+    }
 
-    } catch (error) { console.error('ERROR!'); }
+  } catch (error) { console.error('ERROR!'); }
 }
 getData()
 // ! 45 --------------------------------------------------------------------------------------------------------------------------------------
