@@ -1,15 +1,18 @@
+//* DATE AND TIME
 let a = new Date()
+// console.log(a)
 Date.prototype
 
 let b = a.toString()
-let c = Date.now()
+// console.log(b)
 
-let d = Date.parse()
+let c = Date.now()
+// console.log(c)
 
 let d1 = new Date()
-console.log(d1);
+// console.log(d1);
 let d2 = d1.toISOString()
-console.log(d2);
+// console.log(d2);
 let d3 = d1.toUTCString()
-console.log(d3);
+// console.log(d3);
 
