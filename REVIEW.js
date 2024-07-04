@@ -17,15 +17,15 @@ function sum(...args) {
 sum(1, 2, 3, 4, 5)
 
 //^ SORT 
-const numArray = [10, 60, 70, 20, 50, 40, 30]
+const numArray = [ 10, 60, 70, 20, 50, 40, 30 ]
 let sortedNumArray = numArray.sort()
 let reversedSortedArray = sortedNumArray.reverse()
 
-const monthsArray = ['jan', 'feb', 'mar', 'apr', 'may', 'jul']
+const monthsArray = [ 'jan', 'feb', 'mar', 'apr', 'may', 'jul' ]
 let toSortedMonthArray = monthsArray.toSorted()
 let reversedMonthsArray = monthsArray.toReversed()
 
-const pointsArray = [19, 18, 15, 17, 20, 14]
+const pointsArray = [ 19, 18, 15, 17, 20, 14 ]
 let descendingSortedPoints = pointsArray.sort().reverse()
 console.log(descendingSortedPoints)
 
@@ -43,14 +43,14 @@ let sortedCars = cars.sort(function (a, b) { return a.year - b.year });
 console.log(sortedCars)
 
 //^ INCLUDES 
-let includeArray = [1, 10, 23, true, "hello"]
+let includeArray = [ 1, 10, 23, true, "hello" ]
 includeArray.includes(true) ? console.log('THIS IS TRUE') : console.log("THIS IS FALSE")
 
 
 
 //^ SPREAD
-const orgArray = [1, 2, 3, 4]
-const copyArray = [...orgArray]
+const orgArray = [ 1, 2, 3, 4 ]
+const copyArray = [ ...orgArray ]
 console.log(copyArray)
 
 //^ OBJECT.ASSIGN
