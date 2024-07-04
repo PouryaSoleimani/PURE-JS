@@ -58,3 +58,8 @@ const inputObj = { id: 1, firstName: 'mohammad', lastName: "mohseni" }
 const outputObj = Object.assign(inputObj)
 console.log("OUTPUT OBJECT => ", outputObj)
 
+//^ SET 
+const unsetArray = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 ]
+let setArray = new Set(unsetArray)
+console.log(setArray)
+
