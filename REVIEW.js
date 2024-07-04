@@ -63,3 +63,16 @@ const unsetArray = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 ]
 let setArray = new Set(unsetArray)
 console.log(setArray)
 
+//^ SWITCH CASE
+function conditionHandler(text) {
+  switch (text) {
+    case "HELLO": { console.log("HELLO"); break }
+    case "WORLD": { console.log("WORLD"); break }
+    case "POURYA": { console.log("POURYA"); break }
+    case "SOLEIMANI": { console.log("SOLEIMANI"); break }
+    default: { console.log("WRONG INPUT !!! "); break }
+  }
+}
+console.log(conditionHandler("..."))
+
+

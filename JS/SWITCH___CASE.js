@@ -16,16 +16,16 @@ switch (a) {
     console.log("none of above");
     break;
 }
-var num = 12 ;
+var num = 12;
 
 switch (true) {
-    case (num ===10 ):
-        console.log('its 10');
-        break;
-    case(num == 11 ):
+  case (num === 10):
+    console.log('its 10');
+    break;
+  case (num == 11):
     console.log('its 11');
     break;
-    default:
-        console.log('i dont know');
-        break;
+  default:
+    console.log('i dont know');
+    break;
 }
