@@ -53,3 +53,8 @@ const orgArray = [1, 2, 3, 4]
 const copyArray = [...orgArray]
 console.log(copyArray)
 
+//^ OBJECT.ASSIGN
+const inputObj = { id: 1, firstName: 'mohammad', lastName: "mohseni" }
+const outputObj = Object.assign(inputObj)
+console.log("OUTPUT OBJECT => ", outputObj)
+

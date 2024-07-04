@@ -190,7 +190,7 @@ console.log(dubArray3);
 let dubArray4 = [...dubArray];
 console.log(dubArray4);
 
-//  USING OBJECT.ASSIGN ___________________________________________________________________________________________________________________
+//^  USING OBJECT.ASSIGN ___________________________________________________________________________________________________________________
 let dubArray5 = Object.assign(dubArray);
 console.log(dubArray5);
 
