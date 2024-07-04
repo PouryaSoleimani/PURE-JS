@@ -1,5 +1,5 @@
 //  1 -----------------------------------------------------------------------------------------------------------------------------
-let newArray = [1, 2, 3, 4, 5, 6, 7, 8];
+let newArray = [ 1, 2, 3, 4, 5, 6, 7, 8 ];
 console.log(newArray);
 newArray.pop(7);
 newArray.unshift(8);
@@ -9,11 +9,11 @@ console.log(newArray);
 newArray.splice(4, 0, 3.5);
 console.log(newArray);
 //  3 ------------------------------------------------------------------------------------------------------------------------------
-let newArray2 = [10, 11];
+let newArray2 = [ 10, 11 ];
 let newArray3 = newArray.concat(newArray2);
 console.log(newArray3);
 //  4 ------------------------------------------------------------------------------------------------------------------------------
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 let separateSize = 2;
 let seperatedArr = [];
 for (let i = 0; i < numbers.length; i += separateSize) {
@@ -21,7 +21,7 @@ for (let i = 0; i < numbers.length; i += separateSize) {
 }
 console.log(seperatedArr);
 //  5 -----------------------------------------------------------------------------------------------------------------------------
-let newArray4 = [100, 700, 300, 400, 600, 500];
+let newArray4 = [ 100, 700, 300, 400, 600, 500 ];
 console.log(newArray4);
 newArray4.sort();
 console.log(newArray4);
@@ -29,13 +29,13 @@ console.log(newArray4);
 let length = newArray4.length;
 console.log(length);
 // ---------------------------
-console.log(newArray4[5]);
+console.log(newArray4[ 5 ]);
 //  6 ----------------------------------------------------------------------------------------------------------------------------
-let newArray5 = [1, 2, 3, 4, 5, 6, 7, 8];
+let newArray5 = [ 1, 2, 3, 4, 5, 6, 7, 8 ];
 let newArray6 = Array.from(newArray5, (item) => item * item);
 console.log(newArray6);
 //  7 ----------------------------------------------------------------------------------------------------------------------------
-let newArray7 = [1, [2, 3], [4, 5], [6, 7], 8, 9, 10];
+let newArray7 = [ 1, [ 2, 3 ], [ 4, 5 ], [ 6, 7 ], 8, 9, 10 ];
 let flattedArray = newArray7.flat();
 console.log(flattedArray);
 //  8 ----------------------------------------------------------------------------------------------------------------------------
@@ -49,7 +49,7 @@ let names = "pourya , ali , mohammad , reza , mehdi";
 let last = names.lastIndexOf(`mehdi`);
 console.log(last);
 //  11 ---------------------------------------------------------------------------------------------------------------------------
-let myArray = [1, 2, 3, 4, 5, 6];
+let myArray = [ 1, 2, 3, 4, 5, 6 ];
 console.log(myArray);
 let myArray2 = myArray.reverse();
 console.log(myArray2);
@@ -101,8 +101,8 @@ let ms = d.getMilliseconds();
 console.log(`${hour} : ${minute} : ${seconds} : ${ms}`);
 
 //^  19 ___________________________________________________________________________________________________________________________
-let array1 = [1, 2, 3, 4, 5];
-let array2 = [6, 7, 8, 9, 10];
+let array1 = [ 1, 2, 3, 4, 5 ];
+let array2 = [ 6, 7, 8, 9, 10 ];
 let array3 = array1.concat(array2);
 console.log(array3);
 
@@ -120,7 +120,7 @@ function sum(...args) {
 sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
 
 //^  22 ___________________________________________________________________________________________________________________________
-let myArray5 = [2, 4, 6, 8, 10];
+let myArray5 = [ 2, 4, 6, 8, 10 ];
 for (let x of myArray5) {
   x += x;
   console.log(x);
@@ -138,7 +138,7 @@ let date4 = Intl.DateTimeFormat("en-US", {
 console.log(date4);
 
 //^  25 __________________________________________________________________________________________________________________________
-const testNumbers = [1, 3, 2, 4, 6, 7, 5];
+const testNumbers = [ 1, 3, 2, 4, 6, 7, 5 ];
 console.log(testNumbers);
 testNumbers.sort();
 console.log(testNumbers);
@@ -172,14 +172,14 @@ let alphaArray2 = alphaArray.sort();
 console.log(alphaArray2);
 
 //^  28 _________________________________________________________________________________________________________________________
-let trueArray = [1, 2, 3, 4, 5, 6, true, "Hello", "test text"];
+let trueArray = [ 1, 2, 3, 4, 5, 6, true, "Hello", "test text" ];
 trueArray.includes(true) ? console.log(`TRUE`) : console.log(`FALSE`);
 // if (trueArray.hasOwnproperty===true) {console.log(`ok`);
 // } else {console.log(`error`);}
 
 //  29 __________________________________________________________________________________________________________________________
 //*  USING JSON _____________________________________________________________________________________________________________________________
-let dubArray = [2, 4, 6, 8, 10, 12, 14, 16];
+let dubArray = [ 2, 4, 6, 8, 10, 12, 14, 16 ];
 let dubArray2 = JSON.stringify(dubArray);
 console.log(dubArray2);
 let dubArray3 = JSON.parse(dubArray2);
@@ -187,7 +187,7 @@ console.log(dubArray);
 console.log(dubArray3);
 
 //^  USING SPREAD [...] ___________________________________________________________________________________________________________________
-let dubArray4 = [...dubArray];
+let dubArray4 = [ ...dubArray ];
 console.log(dubArray4);
 
 //^  USING OBJECT.ASSIGN ___________________________________________________________________________________________________________________
@@ -195,7 +195,7 @@ let dubArray5 = Object.assign(dubArray);
 console.log(dubArray5);
 
 //^  30 ____________________________________________________________________________________________________________________________________
-let addArray = [3, 5, 7, 9, 11];
+let addArray = [ 3, 5, 7, 9, 11 ];
 let addArray2 = addArray.toString().replaceAll(",", "");
 console.log(addArray2);
 let addArray3 = addArray2.concat("13");
@@ -204,22 +204,22 @@ let addArray4 = Array.from(addArray3);
 console.log(addArray4);
 
 //^  31 ____________________________________________________________________________________________________________________________________
-let removeArray = ["a", "b", "c", "d", "e", "f"];
+let removeArray = [ "a", "b", "c", "d", "e", "f" ];
 console.log(removeArray);
 // ________________________________________________________________________________________________
 let removeItem = removeArray.splice(0, 1);
 console.log(removeItem);
 console.log(removeArray);
 //^  32 ___________________________________________________________________________________________________________________________________
-let flatArray = [1, 2, [3, 4], [5, 6]];
+let flatArray = [ 1, 2, [ 3, 4 ], [ 5, 6 ] ];
 console.log(flatArray);
 let flatArray2 = flatArray.flat();
 console.log(flatArray2);
 //^  33 ______________________________________________________________________________________________________________________________________
-let arr = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
+let arr = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9 ]
 let list3 = new Set(arr)
 console.log(list3);
-//  34 --------------------------------------------------------------------------------------------------------------------------------------
+//^ 34 --------------------------------------------------------------------------------------------------------------------------------------
 document.cookie = Math.floor(Math.random() * 1000);
 let ck = document.cookie;
 console.log(ck);
@@ -237,7 +237,7 @@ document.cookie =
 //   }, 1000);
 // }, 5000);
 //  38 -------------------------------------------------------------------------------------------------------------------------------------
-//  39 -------------------------------------------------------------------------------------------------------------------------------------
+//^  39 -------------------------------------------------------------------------------------------------------------------------------------
 function display(x) {
   return Promise.resolve(x)
 }
@@ -246,7 +246,7 @@ display(100).then(data => {
     console.log(data);
   }, 3000);
 })
-//  40 -------------------------------------------------------------------------------------------------------------------------------------
+//^  40 -------------------------------------------------------------------------------------------------------------------------------------
 function sum(num1, num2) {
   let a = num1 + num2
   return Promise.resolve(a)
@@ -256,11 +256,11 @@ sum(20, 30).then(data => {
     console.log(data);
   }, 3000);
 })
-//  41 -------------------------------------------------------------------------------------------------------------------------------------
-Promise.all([sum]).then(data => {
+//^  41 -------------------------------------------------------------------------------------------------------------------------------------
+Promise.all([ sum ]).then(data => {
   console.log(`THIS PROMISE HAS BEEN RESOLVED WITH PROMISE.ALL`);
 })
-//  42 -------------------------------------------------------------------------------------------------------------------------------------
+//^  42 -------------------------------------------------------------------------------------------------------------------------------------
 function displayer(res) {
   setTimeout(() => {
     console.log(res);
@@ -271,7 +271,7 @@ function showNumber(num1, callBack) {
 }
 showNumber(500, displayer)
 // THE ANSWER IS 500
-//  43 -------------------------------------------------------------------------------------------------------------------------------------
+//^  43 -------------------------------------------------------------------------------------------------------------------------------------
 function displayer2(res2) {
   setTimeout(() => {
     console.log(res2);
@@ -297,7 +297,7 @@ async function getData() {
     for (const i in response.data.data) {
       if (Object.hasOwnProperty.call(response.data.data, i)) {
         //  USER NAMES
-        const el = response.data.data[i];
+        const el = response.data.data[ i ];
         let content = `${el.first_name} ${el.last_name}`
         let userItem = document.createElement(`li`)
         myList.appendChild(userItem)
