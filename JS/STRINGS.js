@@ -139,7 +139,7 @@ console.log(endw);
 let mtch3 = "my name is pourya , POURYA is my name , They call me Pourya ";
 let mtcsh3res = mtch3.match(/pourya/gi);
 console.log(mtcsh3res);
-// ^^ INCLUDE
+// ^^ INCLUDES
 let mtchInclude = mtch3.includes(`pourya`);
 console.log(mtchInclude);
 // ^^ STARTSWITH AND ENDSWITH
@@ -150,12 +150,12 @@ let mtchEnd = mtch3.endsWith(`Pourya `);
 console.log(mtchEnd);
 
 // ^^ ---------------------------------------- STRING TEMPLATES ----------------------------------------------------
-// & INTERPOLATION -------------------------------------------------------------------------------------------------
+// INTERPOLATION -------------------------------------------------------------------------------------------------
 let firstName = `Pourya`;
 let lastName = `Soleimani`;
 let welCome = `Welcome back ${firstName} ${lastName}`;
 console.log(welCome);
-// & --------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------
 let standard = "Your weight is";
 let weight = 89;
 let kg = "Kilogram";
@@ -168,7 +168,7 @@ let friendLastName = "kalhor"
 let friendAge = '30'
 console.log(`${friendFirstName}` + " " + `${friendLastName}` + " " + `${friendAge}`);
 
-// & EXPRESSION SUBSTITUTION --------------------------------------------------------------------------
+// EXPRESSION SUBSTITUTION --------------------------------------------------------------------------
 let price = 10;
 let VAT = 0.25;
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
