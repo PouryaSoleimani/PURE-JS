@@ -9,3 +9,10 @@ let fullDate = `${d1.getFullYear()} / ${d1.getMonth() + 1} / ${d1.getDate()}`;
 console.log(fullDate);
 
 
+function sum(...args) {
+  let a = args.reduce((a, b) => { return a + b })
+  console.log(a)
+}
+sum(1, 2, 3, 4, 5)
+
+
