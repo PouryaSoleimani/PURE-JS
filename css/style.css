@@ -1,3 +1,10 @@
-.myElemem { 
-  
+.myElemem {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div > button { 
+  font-size: 12rem;
 }
