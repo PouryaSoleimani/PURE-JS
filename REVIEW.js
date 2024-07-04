@@ -1,5 +1,5 @@
-let array1 = [1, 2, 3]
-let array2 = [4, 5, 6]
+`let me1 = { name: "pourya", age: 30 }
+let me2 = { job: "developer" }
 
-const concated = array1.concat(array2)
-console.log(concated)
+let fullMe = { ...me1, ...me2 }
+console.log(fullMe)`
