@@ -9,7 +9,7 @@ class Car {
 // ^ USING REFLECT.CONSTRUCT -------------------------------------
 // let carObj = new Car("BMW","M4")
 // console.log(carObj);
-let carObj = Reflect.construct(Car, ["BMW", "M4", "BLACK"])
+let carObj = Reflect.construct(Car, [ "BMW", "M4", "BLACK" ])
 console.log(carObj);
 
 // ^ REFLECT.DEFINEPROPERTY -------------------------------------
@@ -26,7 +26,7 @@ console.log(obj);
 // ^ REFLECT.GET -----------------------------------------------
 console.log(Reflect.get(obj, `family`));
 
-let arr = [10, 20, 30, 40, 50, 60]
+let arr = [ 10, 20, 30, 40, 50, 60 ]
 console.log(Reflect.get(arr, 1));
 
 // ^ REFLECT.HAS -----------------------------------------------
