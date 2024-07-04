@@ -1,47 +1,47 @@
 // **** STRING METHODS
-// && 0 - LENGTH -----------------------------------------------------------------------------------
-// ^^ RETURNS THE LENGTH OF A STRING
+//^ 0 - LENGTH -----------------------------------------------------------------------------------
+// RETURNS THE LENGTH OF A STRING
 
-// && 1 - SLICE() ---------------------------------------------------------------------------------
+//^ 1 - SLICE() ---------------------------------------------------------------------------------
 let list = "Banana , Kiwi , Apple";
 let extractedPart = list.slice(0, 8);
 console.log(extractedPart);
-// ^^ Extracted Part --> Banana;
+// Extracted Part --> Banana;
 
 let cars = "benz , bmw , audi";
 let sliceCars = cars.slice(0, 10);
 console.log(sliceCars);
-// ^^ Extracted Part --> benz , bmw;
+// Extracted Part --> benz , bmw;
 
 let extractedPart2 = list.slice(8);
 console.log(extractedPart2);
-// ^^ Extracted Part --> from index number 8 till the end;
+// Extracted Part --> from index number 8 till the end;
 
 let extractedPart3 = list.slice(-10);
 console.log(extractedPart3);
-// ^^ Extracted Part --> from the end till the index number 10;
+// Extracted Part --> from the end till the index number 10;
 
-// && 2 - SubString() ----------------------------------------------------------------------------------
+//2 - SubString() ----------------------------------------------------------------------------------
 // * ? same as slice , the only difference is substring doesnt accept negative values.
 
-// && 3- SubStr() --------------------------------------------------------------------------------------
+//3- SubStr() --------------------------------------------------------------------------------------
 // * same as slice , the only difference is substr second parameter is the length of the slice
 // * if we dont give the second paramter , substr will cut the first parameter till the end
 
-// && 4 - Replace() -----------------------------------------------------------------------------------
+//4 - Replace() -----------------------------------------------------------------------------------
 let first = "please vist Microsoft Website";
 let after = first.replace("Microsoft", "W3Schools");
 console.log(first);
 console.log(after);
 
-// && 5 - ReplaceAll() --------------------------------------------------------------------------------
+//5 - ReplaceAll() --------------------------------------------------------------------------------
 let rpl1 =
   " i love dogs , dogs are so lovely , once i had two dogs called jessie and jackie";
 let rpl2 = rpl1.replaceAll("dogs", "cats");
 console.log(rpl1);
 console.log(rpl2);
 
-// &&  6 - toUpperCase() & toLowerCase() -----------------------------------------------------------------
+// 6 - toUpperCase() & toLowerCase() -----------------------------------------------------------------
 
 let defaults = "Hello world !";
 let uppers = defaults.toUpperCase();
@@ -50,43 +50,43 @@ console.log(defaults);
 console.log(uppers);
 console.log(lowers);
 
-// &&  7 - conCat() --------------------------------------------------------------------------------------
+// 7 - conCat() --------------------------------------------------------------------------------------
 let con1 = "Learn";
 let con2 = " Javascript";
 let conSum = con1.concat(con2);
 console.log(conSum);
 
-// && 8 - TRIM ------------------------------------------------------------------------------------------
+//8 - TRIM ------------------------------------------------------------------------------------------
 let untrimText =
   "                                      this text is Untrimmed                              ";
 let trimText = untrimText.trim();
 console.log(untrimText);
 console.log(trimText);
 
-// && 9 - TRIMSTART ------------------------------------------------------------------------------------------
+//9 - TRIMSTART ------------------------------------------------------------------------------------------
 // ** SAME AS TRIM BUT IT REMOVES ONLY THE SPACES IN THE BEGINNING FOR THE STRING
 
-// && 10- TRIMEND ------------------------------------------------------------------------------------------
+//10- TRIMEND ------------------------------------------------------------------------------------------
 // ** SAME AS TRIM BUT IT REMOVES ONLY THE SPACES IN THE END FOR THE STRING
 
-// && 11- PADSTART ------------------------------------------------------------------------------------------
+//11- PADSTART ------------------------------------------------------------------------------------------
 let paddtext = "this is a padtest";
 let paddtext2 = paddtext.padStart(30, "000");
 console.log(paddtext);
 console.log(paddtext2);
 
-// && 12- PADEND ------------------------------------------------------------------------------------------
+//12- PADEND ------------------------------------------------------------------------------------------
 // ** SAME AS PADSTART BUT IT ADDS THE ELEMENTS FROM THE END
 
 // ^^ -------------------------------------------------- STRING SEARCHES -----------------------------------------------------------------
 
-// && 13 - STRING SEARCHES  - INDEXOF ------------------------------------------------------------------------------------------
+//13 - STRING SEARCHES  - INDEXOF ------------------------------------------------------------------------------------------
 
 let goal = "please locate where the destination is ";
 let dst = goal.indexOf("destination");
 console.log(dst);
 
-// && 14 - STRING SEARCHES  - LASTINDEXOF ------------------------------------------------------------------------------------------
+//14 - STRING SEARCHES  - LASTINDEXOF ------------------------------------------------------------------------------------------
 
 let text = "please locate where the destination is ";
 let index = text.lastIndexOf("destination");
