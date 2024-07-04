@@ -39,8 +39,7 @@ let newArray7 = [1, [2, 3], [4, 5], [6, 7], 8, 9, 10];
 let flattedArray = newArray7.flat();
 console.log(flattedArray);
 //  8 ----------------------------------------------------------------------------------------------------------------------------
-let newStr =
-  "Hello , Good Morning  , Hope you all having a good time out there ,,,,,";
+let newStr = "Hello , Good Morning  , Hope you all having a good time out there ,,,,,";
 let newStr2 = newStr.replaceAll(",", "*");
 console.log(newStr2);
 //  9 ----------------------------------------------------------------------------------------------------------------------------
