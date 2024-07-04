@@ -32,7 +32,7 @@ console.log(descendingSortedPoints)
 function compareTwo(a, b) { return a - b }
 console.log(compareTwo(10, 20))
 
-//SORTBY
+//^SORTBY
 const cars = [
   { type: "Volvo", year: 2016 },
   { type: "Saab", year: 2001 },
@@ -41,4 +41,10 @@ const cars = [
 
 let sortedCars = cars.sort(function (a, b) { return a.year - b.year });
 console.log(sortedCars)
+
+//^ INCLUDES 
+let includeArray = [1, 10, 23, true, "hello"]
+includeArray.includes(true) ? console.log('THIS IS TRUE') : console.log("THIS IS FALSE")
+
+
 
