@@ -92,7 +92,7 @@ let text = "please locate where the destination is ";
 let index = text.lastIndexOf("destination");
 console.log(index);
 
-// && 15 - STRING SEARCHES  - SEARCH ------------------------------------------------------------------------------------------
+//15 - STRING SEARCHES  - SEARCH ------------------------------------------------------------------------------------------
 
 let textsr = " this is a test to see how the search method works test test";
 let textsr2 = textsr.search("test");
@@ -101,7 +101,7 @@ console.log(textsr2);
 let textsr3 = textsr.search(/test/);
 console.log(textsr3);
 
-// && 16 - STRING SEARCHES  - MATCH ---------------------------------------------------------------------------------------------
+//16 - STRING SEARCHES  - MATCH ---------------------------------------------------------------------------------------------
 
 let textmat = "The rain in SPAIN stays mainly in the plain";
 let mtch = textmat.match("SPA");
@@ -110,21 +110,21 @@ console.log(mtch);
 let mtch2 = textmat.match(/ain/gi);
 console.log(mtch2);
 
-// && 17 - STRING SEARCHES  - MATCHALL---------------------------------------------------------------------------------------------
+//17 - STRING SEARCHES  - MATCHALL---------------------------------------------------------------------------------------------
 
 let mtchtext =
   "i love dogs , once is had 2 dogs , they were so kind , my dogs were so beautiful";
 let mtchTextResult = mtchtext.matchAll(/dogs/g);
 console.log(mtchTextResult);
 
-// && 18 - STRING SEARCHES  - INCLUDE ---------------------------------------------------------------------------------------------
+//18 - STRING SEARCHES  - INCLUDES ---------------------------------------------------------------------------------------------
 
 let includetext =
   "i love dogs , once is had 2 dogs , they were so kind , my dogs were so beautiful";
 let includ = mtchtext.includes("dogs");
 console.log(includ);
 
-// && 19 - STRING SEARCHES  - STRATSWITH()  &  ENDSWITH() -----------------------------------------------------------
+//19 - STRING SEARCHES  - STRATSWITH()  &  ENDSWITH() -----------------------------------------------------------
 let startendtext =
   "pourya love dogs , once is had 2 dogs , they were so kind , my dogs were so beautiful";
 
