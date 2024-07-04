@@ -28,3 +28,16 @@ let reversedMonthsArray = monthsArray.toReversed()
 const pointsArray = [19, 18, 15, 17, 20, 14]
 let descendingSortedPoints = pointsArray.sort().reverse()
 console.log(descendingSortedPoints)
+
+function compareTwo(a, b) { return a - b }
+console.log(compareTwo(10, 20))
+
+//SORTBY
+const cars = [
+  { type: "Volvo", year: 2016 },
+  { type: "Saab", year: 2001 },
+  { type: "BMW", year: 2010 }
+];
+
+let sortedCars = cars.sort(function (a, b) { return a.year - b.year });
+console.log(sortedCars)
