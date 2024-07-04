@@ -48,3 +48,8 @@ includeArray.includes(true) ? console.log('THIS IS TRUE') : console.log("THIS IS
 
 
 
+//^ SPREAD
+const orgArray = [1, 2, 3, 4]
+const copyArray = [...orgArray]
+console.log(copyArray)
+
