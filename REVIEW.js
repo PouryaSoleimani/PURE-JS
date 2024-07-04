@@ -16,6 +16,15 @@ function sum(...args) {
 }
 sum(1, 2, 3, 4, 5)
 
+//^ SORT 
+const numArray = [10, 60, 70, 20, 50, 40, 30]
+let sortedNumArray = numArray.sort()
+let reversedSortedArray = sortedNumArray.reverse()
 
+const monthsArray = ['jan', 'feb', 'mar', 'apr', 'may', 'jul']
+let toSortedMonthArray = monthsArray.toSorted()
+let reversedMonthsArray = monthsArray.toReversed()
 
-
+const pointsArray = [19, 18, 15, 17, 20, 14]
+let descendingSortedPoints = pointsArray.sort().reverse()
+console.log(descendingSortedPoints)
