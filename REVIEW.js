@@ -41,3 +41,4 @@ const cars = [
 
 let sortedCars = cars.sort(function (a, b) { return a.year - b.year });
 console.log(sortedCars)
+
